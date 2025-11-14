@@ -1,11 +1,15 @@
-# 忽略所有 .o 目标文件
+# 1. (通配符) 忽略所有 .o 目标文件
 *.o
 
-# 忽略 VSCode 的配置文件
-.vscode/
-
-# 忽略我们 test 项目的编译结果
+# 2. (指定路径) 忽略 test 文件夹的编译产物
+# (包括旧的 "my_program" 和新的 "main")
 test/my_program
+test/main
 
-# 忽略 c-learning 项目的编译结果
+# 3. (指定路径) 忽略 project_B 文件夹的编译产物
+# (包括 "program_B" 和 "main_B")
+project_B/program_B
+project_B/main_B
+
+# 4. (指定名称) 忽略 c-learning 项目的编译产物
 c-learning
