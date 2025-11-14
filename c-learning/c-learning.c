@@ -2,22 +2,8 @@
 
 int main()
 {
-    int i,j,num,c;
-    for(i = 100;i < 1000;i++)
-    {
-        c = 0;
-        num = i;
-
-        while(num)
-        {
-            j = num % 10;
-            c += j * j * j;
-            num /= 10;
-        }
-        if(c == i)
-        printf("%d\t",c);
-
-    }
-    
+    int arr[] = {3,4};
+    scanf("%d",&arr[0]);
+    printf("arr[0] = %d",arr[0]);
     return 0;
 }
