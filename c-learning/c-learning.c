@@ -1,9 +1,14 @@
 #include <stdio.h>
-
+#include <string.h>
 int main()
 {
-    int arr[] = {3,4};
-    scanf("%d",&arr[0]);
-    printf("arr[0] = %d",arr[0]);
+    char arr[] = {"i love you so~~~"};
+    
+    int size = strlen(arr);
+    int left = 0,right = size -1;
+    printf("%d",size);
+    
+
+
     return 0;
 }
