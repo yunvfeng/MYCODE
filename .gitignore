@@ -1,0 +1,11 @@
+# 忽略所有 .o 目标文件
+*.o
+
+# 忽略 VSCode 的配置文件
+.vscode/
+
+# 忽略我们 test 项目的编译结果
+test/my_program
+
+# 忽略 c-learning 项目的编译结果
+c-learning
