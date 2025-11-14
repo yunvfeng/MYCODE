@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Active Folder (all *.c files)",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g", 
+                "*.c", // 魔法1: 编译该目录下的“所有.c”文件
+                "-o",
+                "${fileBasenameNoExtension}" // 魔法2: 用“当前文件名”(不带.c)作为输出名
+            ],
+            "options": {
+                // 魔法3: 在“当前文件所在的目录”里执行
+                "cwd": "${fileDirname}" 
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

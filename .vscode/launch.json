@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Active File (Auto)",
+            "type": "cppdbg",
+            "request": "launch",
+            // 魔法4: 自动启动“当前文件所在目录”下的“同名”可执行文件
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            // 魔法5: 自动在“当前文件所在目录”里运行
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // 魔法6: 永远在启动前，执行上面那个“智能”编译任务
+            "preLaunchTask": "Build Active Folder (all *.c files)"
+        }
+    ]
+}
