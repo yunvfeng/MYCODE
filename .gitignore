@@ -12,5 +12,6 @@ project_B/main_B
 # 4. (指定路径) 忽略 c-learning 文件夹的编译产物
 #    (这才是正确的规则!)
 c-learning/c-learning
+    int size = sizeof(arr)/sizeof();
 
 project_C/main
