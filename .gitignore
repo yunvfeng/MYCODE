@@ -3,7 +3,7 @@
 
 # 2. (指定路径) 忽略 test 文件夹的 *所有* 编译产物
 test/test
-test/main
+*test/
 
 # 3. (指定路径) 忽略 project_B 文件夹的 *所有* 编译产物
 project_B/program_B
